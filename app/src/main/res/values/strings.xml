@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Кредитный калькулятор</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_my_start_fragment">Hello start fragment</string>
+    <string name="summa_credit">Желаемая сумма кредита</string>
+    <string name="month">На какой срок (мес.)</string>
+    <string name="monthLabel">На срок (мес.): </string>
+    <string name="summaLabel">"Сумма кредита:"</string>
+    <string name="percent">Процентная ставка:</string>
+    <string name="pay_per_month">Ежемесячный платеж: %2s</string>
+    <string name="calc_button">Рассчитать платеж</string>
+    <string name="grafik_button">Показать график</string>
+    <string name="grafik_fragment">График платежей</string>
+    <string name="grafik_list">Проценты: %s, Долг: %s, Остаток: %s</string>
+    <string name="grafik_month">Месяц: %s</string>
+    <string name="grafik_percent">Проценты: %s</string>
+    <string name="grafik_dolg">Долг: %s</string>
+    <string name="grafik_ostatok">Остаток долга: %s</string>
+</resources>
