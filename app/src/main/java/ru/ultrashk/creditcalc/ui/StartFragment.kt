@@ -32,10 +32,11 @@ class StartFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
         }
     }
-
     private fun setAll() {
         sharedViewModel.apply {
-            setSum(binding?.editTextNumber?.text.toString().toDouble())
+            var sumtmp:String = binding?.editTextNumber?.text.toString()
+            if(sumtmp == "") sumtmp = "0.00"
+            setSum(sumtmp.toDouble())
             setMonth(binding?.editTextNumber2?.text.toString().toInt())
             setPercent(binding?.editTextNumber3?.text.toString().toDouble())
             getPaymentPerMonth()
