@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name = "custom_min_width">245dp</dimen>>
-    <dimen name = "custom_max_width">488dp</dimen>
+    <dimen name = "custom_max_width">487dp</dimen>
+    <dimen name = "custom_min_width_button">220dp</dimen>
 </resources>
