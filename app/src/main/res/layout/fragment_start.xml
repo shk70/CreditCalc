@@ -11,10 +11,12 @@
             name="viewModel"
             type="ru.ultrashk.creditcalc.model.CalcViewModel" />
     </data>
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/editTextNumberLayout"
@@ -113,6 +115,7 @@
             android:fontFamily="@font/roboto"
             android:text="@{@string/pay_per_month(viewModel.monthPay)}"
             android:textSize="20sp"
+            android:layout_marginBottom="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
@@ -150,4 +153,5 @@
             app:layout_constraintTop_toBottomOf="@+id/calc_button" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
 </layout>

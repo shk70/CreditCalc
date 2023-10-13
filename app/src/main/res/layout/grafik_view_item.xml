@@ -15,75 +15,82 @@
         android:layout_margin="8dp"
         app:cardElevation="4dp"
         app:cardCornerRadius="4dp">
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
 
-                <TextView
-                    android:id="@+id/month_plat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:padding="4dp"
-                    android:text="@{@string/grafik_month(Integer.toString(grafik.month))}"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="14sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:text="Месяц:" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/plateg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/month_plat"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:text="@{@string/grafik_percent(Double.toString(grafik.sumPercent))}"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="14sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/month_plat"
-                    tools:text="Проценты"
-                    android:gravity="right"
-                    android:paddingLeft="8dp"/>
+            <TextView
+                android:id="@+id/month_plat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:text="@{@string/grafik_month(Integer.toString(grafik.month))}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Месяц:" />
 
-                <TextView
-                    android:id="@+id/dolg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/month_plat"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:text="@{@string/grafik_dolg(Double.toString(grafik.sumDolg))}"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="14sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/plateg"
-                    tools:text="Долг"
-                    android:gravity="right"
-                    android:paddingLeft="8dp"/>
+            <TextView
+                android:id="@+id/plateg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/month_plat"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:text="@{@string/grafik_percent(Double.toString(grafik.sumPercent))}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/month_plat"
+                tools:text="Проценты" />
 
-                <TextView
-                    android:id="@+id/ostatok"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/month_plat"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:text="@{@string/grafik_ostatok(Double.toString(grafik.ostatok))}"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/dolg"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/plateg"
-                    app:layout_constraintVertical_bias="0.21"
-                    tools:text="Остаток" />
+            <TextView
+                android:id="@+id/dolg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/month_plat"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:text="@{@string/grafik_dolg(Double.toString(grafik.sumDolg))}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/plateg"
+                tools:text="Долг" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/ostatok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/month_plat"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@{@string/grafik_ostatok(Double.toString(grafik.ostatok))}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dolg"
+                tools:text="Остаток" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
 

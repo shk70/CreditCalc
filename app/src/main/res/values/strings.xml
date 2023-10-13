@@ -13,7 +13,7 @@
     <string name="grafik_button">Показать график</string>
     <string name="grafik_fragment">График платежей</string>
     <string name="grafik_list">Проценты: %s, Долг: %s, Остаток: %s</string>
-    <string name="grafik_month">Месяц: %s</string>
+    <string name="grafik_month">Платеж в %s месяце</string>
     <string name="grafik_percent">Проценты: %s</string>
     <string name="grafik_dolg">Долг: %s</string>
     <string name="grafik_ostatok">Остаток долга: %s</string>
